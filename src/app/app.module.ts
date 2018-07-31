@@ -5,10 +5,7 @@ import { AppComponent } from './app.component';
 import { EmployeesComponent } from './employees/employees.component';
 
 
- 
-import { AccordionModule } from 'primeng/primeng';
-import {ButtonModule} from 'primeng/components/button/button';
-
+import {AccordionModule} from 'primeng/accordion';  //accordion and accordion tab
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 
@@ -19,7 +16,9 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     EmployeesComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule,
+    AccordionModule
   ],
   providers: [],
   bootstrap: [AppComponent]
